@@ -1,3 +1,4 @@
+
 public class Light implements Appliance {
     private boolean isOn = false;
 

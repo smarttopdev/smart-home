@@ -1,3 +1,4 @@
+
 public class AirConditioner implements Appliance {
     private String mode = "off";
 

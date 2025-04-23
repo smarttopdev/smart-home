@@ -1,3 +1,4 @@
+
 public class Fan implements Appliance {
     private int speed = 0;
 
