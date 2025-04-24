@@ -1,25 +1,25 @@
 
 public class AirConditioner implements Appliance {
-    private String mode = "off";
+    private ACMode mode = ACMode.OFF; // Default mode is off
 
     @Override
     public void turnOn() {
-        mode = "cooling";
-        System.out.println("AC is turned ON in " + mode + " mode.");
+        mode = ACMode.COOLING; // Default to cooling mode when turned on
+        System.out.println("Air Conditioner is turned ON in " + mode.getMode() + " mode.");
     }
 
     @Override
     public void turnOff() {
-        mode = "off";
-        System.out.println("AC is turned OFF.");
+        mode = ACMode.OFF;
+        System.out.println("Air Conditioner is turned OFF.");
     }
 
-    public void setThermostat(String mode) {
-        if (mode.equals("off") || mode.equals("cooling") || mode.equals("heating")) {
-            this.mode = mode;
-            System.out.println("AC mode set to " + mode);
-        } else {
-            System.out.println("Invalid mode.");
-        }
+    public void setThermostat(ACMode mode) {
+        this.mode = mode;
+        System.out.println("Air Conditioner mode set to " + mode.getMode());
+    }
+
+    public ACMode getMode() {
+        return mode;
     }
 }
