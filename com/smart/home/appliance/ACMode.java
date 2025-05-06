@@ -1,3 +1,5 @@
+package com.smart.home.appliance;
+
 public enum ACMode {
   OFF("Off"),
   COOLING("Cooling"),

@@ -1,3 +1,4 @@
+package com.smart.home.appliance;
 
 public class Light implements Appliance {
     private boolean isOn = false;

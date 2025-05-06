@@ -1,3 +1,4 @@
+package com.smart.home.appliance;
 
 public class AirConditioner implements Appliance {
     private ACMode mode = ACMode.OFF; // Default mode is off

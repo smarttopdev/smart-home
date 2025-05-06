@@ -1,3 +1,4 @@
+package com.smart.home.appliance;
 
 public class Fan implements Appliance {
     private int speed = 0;
